@@ -1,0 +1,35 @@
+.navigation {
+    height: 100%;
+    &__items {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin-left: -4rem;
+        overflow: hidden;
+        height: 92%;
+    }
+
+    &__lists {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+        margin-top: .8rem;
+        &:hover{
+            border-bottom: 3.5px solid $Lime-Green;
+        }
+    }
+
+    &__links {
+        &,
+        &:link,
+        &:visited{
+        text-decoration: none;
+        color: $light-gray;
+        }
+
+        &:hover {
+            color: $color-black;
+        }
+    }
+}
