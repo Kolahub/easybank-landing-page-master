@@ -2,23 +2,37 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
+    max-width: 114;
+    @include respond(phone-port) { 
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+        place-items: center;
+    }
 }
 
 .article__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2.5rem;
+
+    @include respond(phone-port) { 
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+        place-items: center;
+    }
 }
 
-.footer__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 4.5rem;
-}
 
 .footer__grid {
     display: grid;
     grid-template-columns: 15rem 15rem 15rem 1fr;
     column-gap: 4.5rem;
     place-items: center;
+
+    @include respond(phone-port) { 
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+            place-items: center;
+    }
+
 }

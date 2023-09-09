@@ -1,11 +1,20 @@
 .home__section {
     padding: 0 0 5rem 0;
     background-color: $lighter-gray;
+
+    @include respond (phone-port) {
+        width: 203%;
+    }
 }
 .why__section {
     padding: 8rem 0;
     background-color: $Light-Grayish-Blue;
     margin-top: -35rem;
+
+    @include respond (phone-port) {
+        margin-top: 0;
+        width: 203%;
+    }
 }
 
 .article__section {
@@ -16,10 +25,18 @@
     & > * {
         transform: skewY(3deg);
     }
+
+    @include respond (phone-port) {
+        width: 203%;
+    }
 }
 
 .footer__section {
     padding: 10rem 0;
     margin-top: -4rem;
     background-color: $Dark-Blue;
+
+    @include respond (phone-port) {
+        width: 203%;
+    }
 }

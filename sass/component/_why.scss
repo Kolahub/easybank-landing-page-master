@@ -1,11 +1,20 @@
 .why {
     max-width: 120rem;
     margin: auto;
+    @include respond(tab-port) {
+        max-width: 90rem;
+    }
+    @include respond(phone-port) {
+        max-width: 65rem;
+    }
     &__header--sec {
         width: 70rem;
     }
 
 
     &__col {
+        @include respond(phone-port) {
+            text-align: center;
+        }
     }
 }

@@ -28,6 +28,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: inherit; }
@@ -76,6 +85,12 @@ body {
 .article {
   max-width: 120rem;
   margin: auto; }
+  @media only screen and (max-width: 56.25em) {
+    .article {
+      max-width: 90rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .article {
+      max-width: 65rem; } }
   .article__box {
     height: auto;
     background-color: white;
@@ -93,6 +108,9 @@ body {
     height: 20rem;
     width: 100%;
     border-radius: 1rem 1rem 0 0; }
+    @media only screen and (max-width: 28.125em) {
+      .article__img--pic {
+        height: 50rem; } }
   .article__img--btn {
     display: flex;
     align-items: center;
@@ -163,14 +181,26 @@ body {
 .why {
   max-width: 120rem;
   margin: auto; }
+  @media only screen and (max-width: 56.25em) {
+    .why {
+      max-width: 90rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .why {
+      max-width: 65rem; } }
   .why__header--sec {
     width: 70rem; }
+  @media only screen and (max-width: 28.125em) {
+    .why__col {
+      text-align: center; } }
 
 .footer {
   max-width: 120rem;
   margin: auto;
   transform: skewY(-1deg);
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      max-width: 90rem; } }
   .footer__col-1-of-4 {
     display: flex;
     flex-direction: column;
@@ -216,8 +246,11 @@ body {
   font-size: 11px;
   font-weight: 700;
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
   background-color: #2d314d; }
+  @media only screen and (max-width: 28.125em) {
+    .attribution {
+      width: 203%; } }
   .attribution > * {
     transform: skewY(-1deg); }
   .attribution a {
@@ -226,30 +259,41 @@ body {
 .why__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 2rem; }
+  column-gap: 2rem;
+  max-width: 114; }
+  @media only screen and (max-width: 28.125em) {
+    .why__grid {
+      grid-template-columns: 1fr;
+      row-gap: 5rem;
+      place-items: center; } }
 
 .article__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 2.5rem; }
-
-.footer__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 4.5rem; }
+  @media only screen and (max-width: 28.125em) {
+    .article__grid {
+      grid-template-columns: 1fr;
+      row-gap: 5rem;
+      place-items: center; } }
 
 .footer__grid {
   display: grid;
   grid-template-columns: 15rem 15rem 15rem 1fr;
   column-gap: 4.5rem;
   place-items: center; }
+  @media only screen and (max-width: 28.125em) {
+    .footer__grid {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+      place-items: center; } }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 8rem;
+  padding: 1rem 10%;
   height: 6rem;
   font-weight: 400;
   font-size: 1.5rem;
@@ -260,6 +304,9 @@ body {
   left: 0;
   right: 0;
   z-index: 100; }
+  @media only screen and (max-width: 28.125em) {
+    .header__btn {
+      display: none; } }
 
 .home {
   display: flex;
@@ -270,10 +317,28 @@ body {
   height: 100rem;
   max-width: 136rem;
   margin: 0 0 0 auto; }
+  @media only screen and (max-width: 75em) {
+    .home {
+      max-width: 120rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .home {
+      max-width: 95.5rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .home {
+      background-image: url(../images/bg-intro-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0% 280%;
+      display: block !important;
+      width: 150% !important; } }
   .home__text {
     max-width: 40rem;
     position: absolute;
     top: 20rem; }
+    @media only screen and (max-width: 28.125em) {
+      .home__text {
+        top: 60rem;
+        left: 15rem; } }
     .home__text--heading {
       font-size: 5rem;
       color: #2d314d;
@@ -283,19 +348,56 @@ body {
   .home__bg {
     position: absolute;
     right: -40rem; }
+    @media only screen and (max-width: 28.125em) {
+      .home__bg {
+        position: absolute;
+        left: 10rem !important; } }
     .home__bg--intro {
       height: 90rem;
       width: 120rem;
       margin-top: -40rem; }
+      @media only screen and (max-width: 75em) {
+        .home__bg--intro {
+          height: 80rem;
+          width: 110rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .home__bg--intro {
+          height: 70rem;
+          width: 100rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .home__bg--intro {
+          height: 0rem;
+          width: 0rem; } }
       .home__bg--intro__pic {
         width: 100%;
         height: 100%; }
+        @media only screen and (max-width: 28.125em) {
+          .home__bg--intro__pic {
+            display: none; } }
     .home__bg--subIntro {
       height: 90rem;
       width: 75rem;
       position: absolute;
       top: -28.5rem;
       right: 27rem; }
+      @media only screen and (max-width: 75em) {
+        .home__bg--subIntro {
+          height: 80rem;
+          width: 65rem;
+          top: -20.5rem;
+          right: 27rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .home__bg--subIntro {
+          height: 70rem;
+          width: 55rem;
+          top: -36.5rem;
+          right: 30.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .home__bg--subIntro {
+          height: 80rem;
+          width: 65rem;
+          top: -15rem;
+          right: 55rem; } }
       .home__bg--subIntro__pic {
         width: 100%;
         height: 100%; }
@@ -330,11 +432,18 @@ body {
 .home__section {
   padding: 0 0 5rem 0;
   background-color: #fafafa; }
+  @media only screen and (max-width: 28.125em) {
+    .home__section {
+      width: 203%; } }
 
 .why__section {
   padding: 8rem 0;
   background-color: #edf2fd;
   margin-top: -35rem; }
+  @media only screen and (max-width: 28.125em) {
+    .why__section {
+      margin-top: 0;
+      width: 203%; } }
 
 .article__section {
   padding: 10rem 0;
@@ -342,8 +451,14 @@ body {
   transform: skewY(-3deg); }
   .article__section > * {
     transform: skewY(3deg); }
+  @media only screen and (max-width: 28.125em) {
+    .article__section {
+      width: 203%; } }
 
 .footer__section {
   padding: 10rem 0;
   margin-top: -4rem;
   background-color: #2d314d; }
+  @media only screen and (max-width: 28.125em) {
+    .footer__section {
+      width: 203%; } }

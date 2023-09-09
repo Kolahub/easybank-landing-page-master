@@ -1,6 +1,12 @@
 .article {
     max-width: 120rem;
     margin: auto;
+    @include respond(tab-port) {
+        max-width: 90rem;
+    }
+    @include respond(phone-port) {
+        max-width: 65rem;
+    }
     &__box {
         height: auto;
         background-color: $color-white;
@@ -24,6 +30,10 @@
             height: 20rem;
             width: 100%;
             border-radius: 1rem 1rem 0 0;
+
+            @include respond(phone-port) {
+                height: 50rem;
+            }
         }
 
         &--btn {
