@@ -3,19 +3,30 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: $Light-Grayish-Blue;
+
 }
 .text__primary {
     font-size: 1.8rem;
     color: $dark-gray;
+    @include respond(tab-port) {
+        font-size: 2rem;
+      }
 }
 .text__secondary {
     font-size: 1.5rem;
     color: $dark-gray;
+    @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
 }
 .heading__secondary {
     font-size: 3rem;
     color: $Dark-Blue;
+
+    @include respond(tab-port) {
+        font-size: 5rem;
+      }
+
 }
 
 .heading__tertiary {

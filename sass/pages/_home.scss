@@ -3,7 +3,8 @@
     background-color: $lighter-gray;
 
     @include respond (phone-port) {
-        width: 203%;
+        padding: 15rem 0;
+        width: 205%;
     }
 }
 .why__section {
@@ -13,7 +14,7 @@
 
     @include respond (phone-port) {
         margin-top: 0;
-        width: 203%;
+        width: 205%;
     }
 }
 
@@ -27,7 +28,7 @@
     }
 
     @include respond (phone-port) {
-        width: 203%;
+        width: 205%;
     }
 }
 
@@ -37,6 +38,6 @@
     background-color: $Dark-Blue;
 
     @include respond (phone-port) {
-        width: 203%;
+        width: 205%;
     }
 }

@@ -18,10 +18,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0% 280%;
-        display: block !important;
-        width: 150% !important;
-        // max-width: 60rem;
-        // margin: auto;
+        display: block;
+        width: 200%;
+        
 
     }
     
@@ -30,6 +29,7 @@
         position: absolute;
         top: 20rem;
         @include respond(phone-port) { 
+            max-width: 60rem;
             top: 60rem;
             left: 15rem;
                 }
@@ -37,6 +37,10 @@
             font-size: 5rem;
             color: $Dark-Blue;
             animation: moveInUp 1s ease-in;
+
+            @include respond(phone-port) { 
+                font-size: 6rem;
+                    }
         }
 
         p {
