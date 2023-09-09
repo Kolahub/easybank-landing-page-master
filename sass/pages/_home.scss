@@ -3,8 +3,23 @@
     background-color: $lighter-gray;
 }
 .why__section {
-    height: 35rem;
     padding: 8rem 0;
     background-color: $Light-Grayish-Blue;
     margin-top: -35rem;
+}
+
+.article__section {
+    padding: 10rem 0;
+    background-color: $lighter-gray;
+    transform: skewY(-3deg);
+
+    & > * {
+        transform: skewY(3deg);
+    }
+}
+
+.footer__section {
+    padding: 10rem 0;
+    margin-top: -4rem;
+    background-color: $Dark-Blue;
 }

@@ -3,3 +3,22 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
 }
+
+.article__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2.5rem;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4.5rem;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem 1fr;
+    column-gap: 4.5rem;
+    place-items: center;
+}

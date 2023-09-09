@@ -6,13 +6,14 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "component/article";
 @import "component/button";
+@import "component/why";
 
 @import "layouts/footer";
 @import "layouts/grid";
 @import "layouts/header";
 @import "layouts/home";
 @import "layouts/navigation";
-@import "layouts/why";
 
 @import "pages/home";
