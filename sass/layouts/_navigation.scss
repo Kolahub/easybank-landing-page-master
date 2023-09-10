@@ -1,22 +1,86 @@
 .navigation {
     height: 100%;
+    &__checkbox {
+        display: none;
+    }
+    &__button {
+        display: none;
+        @include respond(phone-port) {
+            display: block;
+            background-color: $color-white;
+            height: 8rem;
+            width: 8rem;
+            top: .7rem;
+            right: .2rem;
+            transform: scale(.6);
+            position: fixed;
+            border-radius: 50%;
+            text-align: center;
+            z-index: 2000;
+            cursor: pointer;
+        }
+    }
+    &__background {
+        display: none;
+        @include respond(phone-port) { 
+            display: block;
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+            position: fixed;
+            top: .92rem;
+            right: 1rem;
+            transform: scale(.5);
+            z-index: 1000;
+            background-image: radial-gradient($Lime-Green, $Bright-Cyan);
+            transition: all .4s cubic-bezier(0.85, 0, 0.15, 1);
+        }
+    }
+    &__nav {
+        @include respond(phone-port) {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1500;
+            width: 0;
+            opacity: 0;
+            transition: all .4s cubic-bezier(0.5, 1, 0.89, 1);
+        }
+    }
     &__items {
-        list-style: none;
         display: flex;
+        list-style: none;
         text-align: center;
         margin-left: -4rem;
         overflow: hidden;
         height: 92%;
+        
+
+        @include respond(phone-port) {
+            display: block;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            list-style: none;
+            text-align: center;
+            width: 50%;
+        }
     }
 
     &__lists {
         display: inline-block;
+        height: 4.4rem;
         &:not(:last-child) {
             margin-right: 3rem;
         }
         margin-top: .8rem;
         &:hover{
             border-bottom: 3.5px solid $Lime-Green;
+        }
+        @include respond(phone-port) { 
+            margin: 1rem;
         }
     }
 
@@ -31,5 +95,89 @@
         &:hover {
             color: $color-black;
         }
+        
+        @include respond(phone-port) { 
+            &:link, 
+            &:visited{
+            display: block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50% );
+            background-size: 230%;
+            transition: all .4s;
+
+            }
+    
+            &:hover,
+            &:active {
+                background-position: 100%;
+                color: $Lime-Green;
+                transform: translateX(2rem);
+            }
+        }
+    }
+
+    @include respond(phone-port) { 
+        &__checkbox:checked ~ &__background {
+            transform: scale(80);
+        }
+    
+        &__checkbox:checked ~ &__nav {
+            width: 100%;
+            opacity: 1;
+        }
+    
+        &__icon {
+            position: relative;
+            margin-top: 3.5rem;
+            &,
+            &::before,
+            &::after {
+                width: 3rem;
+                height: 2pX;
+                background-color: $darker-gray;
+                display: inline-block;
+        }
+    
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                transition: all .1s;
+            }
+            &::before{ top: -.8rem;}
+            &::after{ top:.8rem;}
+    
+        }
+    
+        &__button:hover &__icon::before {
+            top: -1rem;
+        }
+    
+        &__button:hover &__icon::after {
+            top: 1rem;
+        }
+    
+        &__checkbox:checked + &__button &__icon {
+            background-color: transparent;
+        }
+    
+        &__checkbox:checked + &__button &__icon::before {
+            top: 0;
+            transform: rotate(135deg);
+        }
+    
+        &__checkbox:checked + &__button &__icon::after {
+            top: 0;
+            transform: rotate(-135deg);
+        }
     }
 }
+
+
+
