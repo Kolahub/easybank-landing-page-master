@@ -5,10 +5,10 @@
         max-width: 90rem;
     }
     @include respond(phone-port) {
-        max-width: 65rem;
+        max-width: 40rem;
     }
     &__header--sec {
-        width: 70rem;
+        
     }
 
 

@@ -1,12 +1,16 @@
 .footer {
   max-width: 120rem;
   margin: auto;
-  // background-color: aqua;
+  height: auto;
   transform: skewY(-1deg);
   position: relative;
   @include respond(tab-port) {
     max-width: 90rem;
 }
+@include respond(phone-port) {
+  max-width: 20rem;
+}
+
   &__col-1-of-4 {
     display: flex;
     flex-direction: column;
@@ -14,7 +18,19 @@
     align-items: center;
     height: 8rem;
   }
-  img {
+  &__col-2-of-4 { 
+    @include respond(phone-port) {
+      margin-left: -28%;
+      margin-top: 2rem;
+    }
+  }  
+  &__col-3-of-4 { 
+    @include respond(phone-port) {
+      margin-left: -28%;
+      margin-bottom: 2rem;
+    }
+  }  
+    img {
     height: 1.5rem;
   }
   &__media {
@@ -38,6 +54,10 @@
   &__items {
     display: block;
     list-style: none;
+
+    @include respond(phone-port) {
+      text-align: center;
+    }
   }
 
   &__lists {
@@ -66,27 +86,35 @@
       font-size: 1.2rem;
       font-weight: 700;
     }
-  }
 
+    @include respond(phone-port) {
+      position: relative;
+      bottom: -3rem;
+    }
+  }
   &__btn {
     margin-left: 3rem;
     margin-bottom: 3rem;
+
+    @include respond(phone-port) {
+      margin-left: 1.5rem;
   }
+}
 }
 
-.attribution {
-  font-size: 11px;
-  font-weight: 700;
-  text-align: center;
-  padding: 2rem 0;
-  @include respond (phone-port) {
-    width: 203%;
-}
-  & > * {
-    transform: skewY(-1deg);
-  }
-  background-color: $Dark-Blue;
-  & a {
-    color: hsl(228, 45%, 44%);
-  }
-}
+// .attribution {
+//   font-size: 11px;
+//   font-weight: 700;
+//   text-align: center;
+//   padding: 2rem 0;
+//   @include respond (phone-port) {
+//     width: 203%;
+// }
+//   & > * {
+//     transform: skewY(-1deg);
+//   }
+//   background-color: $Dark-Blue;
+//   & a {
+//     color: hsl(228, 45%, 44%);
+//   }
+// }
