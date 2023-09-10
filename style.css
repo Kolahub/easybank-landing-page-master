@@ -263,7 +263,9 @@ body {
     @media only screen and (max-width: 28.125em) {
       .footer__col-4-of-4 {
         position: relative;
-        bottom: -3rem; } }
+        bottom: -3rem;
+        right: -2rem;
+        width: 25rem; } }
   .footer__btn {
     margin-left: 3rem;
     margin-bottom: 3rem; }

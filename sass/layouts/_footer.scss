@@ -91,6 +91,8 @@
     @include respond(phone-port) {
       position: relative;
       bottom: -3rem;
+      right: -2rem;
+      width: 25rem;
     }
   }
   &__btn {
