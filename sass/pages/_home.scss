@@ -1,34 +1,28 @@
-.home__section {
-    padding: 0 0 5rem 0;
-    background-color: $lighter-gray;
-
-    @include respond (phone-port) {
-        padding: 15rem 0;
-        width: 205%;
-    }
-}
 .why__section {
-    padding: 8rem 0;
+    padding: 15rem 0;
     background-color: $Light-Grayish-Blue;
-    margin-top: -35rem;
+    margin-top: -17rem;
+    width: 100%;
 
     @include respond (phone-port) {
         margin-top: 0;
-        width: 205%;
+        // width: auto;
     }
 }
 
 .article__section {
     padding: 10rem 0;
     background-color: $lighter-gray;
+    margin-top: -5rem;
     transform: skewY(-3deg);
+
 
     & > * {
         transform: skewY(3deg);
     }
 
     @include respond (phone-port) {
-        width: 205%;
+        // width: 205%;
     }
 }
 
@@ -38,6 +32,6 @@
     background-color: $Dark-Blue;
 
     @include respond (phone-port) {
-        width: 205%;
+        // width: 205%;
     }
 }

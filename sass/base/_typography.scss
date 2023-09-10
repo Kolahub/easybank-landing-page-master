@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
 
 }
+
 .text__primary {
     font-size: 1.8rem;
     color: $dark-gray;
@@ -15,9 +16,9 @@ body {
 .text__secondary {
     font-size: 1.5rem;
     color: $dark-gray;
-    @include respond(tab-port) {
-        font-size: 3.5rem;
-      }
+    // @include respond(tab-port) {
+    //     font-size: 3.5rem;
+    //   }
 }
 .heading__secondary {
     font-size: 3rem;

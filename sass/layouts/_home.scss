@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    height: 100rem;
+    height: 125vh;
     max-width: 136rem;
     margin: 0 0 0 auto;
     @include respond(tab-land) {
@@ -19,7 +19,7 @@
         background-size: cover;
         background-position: 0% 280%;
         display: block;
-        width: 200%;
+        // width: 205%;
         
 
     }
@@ -58,8 +58,8 @@
 
         &--intro {
             height: 90rem;
-            width: 120rem;
-            margin-top: -40rem;
+            width: 130rem;
+            margin-top: -27rem;
 
             @include respond(tab-land) {
                 height: 80rem;
@@ -84,11 +84,11 @@
         }
 
         &--subIntro {
-            height: 90rem;
-            width: 75rem;
+            height: 100rem;
+            width: 85rem;
             position: absolute;
-            top: -28.5rem;
-            right: 27rem;
+            top: -18rem;
+            right: 25rem;
 
             @include respond(tab-land) {
                 height: 80rem;
