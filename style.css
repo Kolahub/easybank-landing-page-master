@@ -369,7 +369,7 @@ body {
       max-width: 93rem; } }
   @media only screen and (max-width: 28.125em) {
     .home {
-      background-image: url(https://kolahub.github.io/easybank-lamding-page-master/images/bg-intro-mobile.svg);
+      background-image: url(../images/bg-intro-mobile.svg);
       background-repeat: no-repeat;
       background-size: 60rem 60rem;
       background-position: 60% 0%;
