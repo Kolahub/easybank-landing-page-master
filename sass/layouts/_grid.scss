@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
+
+    @include respond(tab-port) { 
+        grid-template-columns: 1fr 1fr;
+    }
     @include respond(phone-port) { 
         grid-template-columns: 1fr;
         row-gap: 5rem;
@@ -13,6 +17,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2.5rem;
+
+    @include respond(tab-port) { 
+        grid-template-columns: 1fr 1fr;
+    }
 
     @include respond(phone-port) { 
         grid-template-columns: 1fr;
