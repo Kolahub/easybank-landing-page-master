@@ -16,6 +16,7 @@
     @include respond(phone-port) {
         background-image: url(../images/bg-intro-mobile.svg) !important;
         min-height: 100%;
+        background-attachment: scroll;
         background-repeat: no-repeat;
         background-size: 60rem 60rem;
         background-position: 60% 0%;
@@ -30,7 +31,7 @@
         position: absolute;
         // top: 20rem;
         @include respond(phone-port) { 
-            bottom:  1%;
+            bottom:  10%;
             left: 4.5rem;
                 }
         &--heading {
