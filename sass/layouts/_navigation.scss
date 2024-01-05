@@ -26,25 +26,25 @@
             display: block;
             height: 6rem;
             width: 6rem;
-            border-radius: 50%;
             position: fixed;
             top: .92rem;
             right: 1rem;
             transform: scale(.5);
             z-index: 1000;
-            background-image: radial-gradient($Lime-Green, $Bright-Cyan);
+            opacity: 0;
             transition: all .4s cubic-bezier(0.85, 0, 0.15, 1);
         }
     }
     &__nav {
         @include respond(phone-port) {
-            height: 100vh;
+            height: 90vh;
             position: fixed;
-            top: 0;
+            top: 8rem;
             right: 0;
             z-index: 1500;
             width: 0;
             opacity: 0;
+            background-image: linear-gradient(rgba($Dark-Blue, .95), rgba($Light-Grayish-Blue, .1));
             transition: all .4s cubic-bezier(0.5, 1, 0.89, 1);
         }
     }
@@ -60,12 +60,15 @@
         @include respond(phone-port) {
             display: block;
             position: absolute;
-            top: 70%;
-            left: 50%;
+            top: 25%;
+            left: 58.4%;
             transform: translate(-50%, -50%);
             list-style: none;
             text-align: center;
-            width: 50%;
+            width: 75%;
+            height: 35rem;
+            border-radius: 1rem;
+            background-color: $color-white;
         }
     }
 
@@ -81,6 +84,9 @@
         }
         @include respond(phone-port) { 
             margin: 1rem;
+            top: 15%;
+            left: 40%;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -103,7 +109,7 @@
             font-size: 3rem;
             font-weight: 300;
             padding: 1rem 2rem;
-            color: $color-white;
+            color: $color-black;
             text-decoration: none;
             text-transform: uppercase;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50% );
@@ -124,6 +130,7 @@
     @include respond(phone-port) { 
         &__checkbox:checked ~ &__background {
             transform: scale(80);
+            opacity: 1;
         }
     
         &__checkbox:checked ~ &__nav {

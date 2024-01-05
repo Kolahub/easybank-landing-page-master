@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position:  relative;
     overflow: hidden;
     height: 125vh;
     max-width: 136rem;
@@ -14,11 +14,13 @@
         max-width: 93rem;
     }
     @include respond(phone-port) {
-        background-image: url(../images/bg-intro-mobile.svg);
+        background-image: url(../images/bg-intro-mobile.svg) !important;
+        min-height: 100%;
         background-repeat: no-repeat;
         background-size: 60rem 60rem;
         background-position: 60% 0%;
         display: block;
+        top: 0;
         height: 100vh;
     }
 
@@ -26,9 +28,9 @@
     &__text {
         max-width: 40rem;
         position: absolute;
-        top: 20rem;
+        // top: 20rem;
         @include respond(phone-port) { 
-            top: 47rem;
+            bottom:  1%;
             left: 4.5rem;
                 }
         &--heading {
