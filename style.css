@@ -410,8 +410,9 @@ body {
           width: 110rem; } }
       @media only screen and (max-width: 56.25em) {
         .home__bg--intro {
-          height: 70rem;
-          width: 100rem; } }
+          height: 90rem;
+          width: 105rem;
+          margin-top: -40rem; } }
       @media only screen and (max-width: 37.5em) {
         .home__bg--intro {
           height: 0rem;
@@ -537,7 +538,8 @@ body {
       border-bottom: 3.5px solid #31d35c; }
     @media only screen and (max-width: 28.125em) {
       .navigation__lists {
-        margin: 1rem;
+        display: block;
+        position: relative;
         top: 15%;
         left: 40%;
         transform: translate(-50%, -50%); } }

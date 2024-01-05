@@ -83,7 +83,8 @@
             border-bottom: 3.5px solid $Lime-Green;
         }
         @include respond(phone-port) { 
-            margin: 1rem;
+            display: block;
+            position: relative;
             top: 15%;
             left: 40%;
             transform: translate(-50%, -50%);

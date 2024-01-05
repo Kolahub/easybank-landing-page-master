@@ -66,8 +66,9 @@
                 width: 110rem;
             }
             @include respond(tab-port) {
-                height: 70rem;
-                width: 100rem;
+                height: 90rem;
+                width: 105rem;
+                margin-top: -40rem;
             }
             @include respond(phone) {
                 height: 0rem;
